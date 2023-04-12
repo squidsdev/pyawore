@@ -31,7 +31,7 @@ class pyawore(object):
 
 		if data.get('error'):
 			raise SendTransactionError(data["message"])
-	def create_invoice(self, amount: float, comment: str = '', token_code: str, currency_code: str, return_url: str = None, callback_url: str = None) -> dict:
+	def create_invoice(self, amount: float, token_code: str, currency_code: str, comment: str = '', return_url: str = None, callback_url: str = None) -> dict:
 		data = {
 			"tokenApi": self.token,
 			"amount": amount,
