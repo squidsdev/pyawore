@@ -1,6 +1,6 @@
 import setuptools
 
-setup(
+setuptools.setup(
     name='pyawore',
     version='0.1',
     author='squids',
