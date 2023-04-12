@@ -3,7 +3,7 @@ from pyawore import AuthError, SendTransactionError, CreateInvoiceError
 from requests import get, post
 import json
 
-class AworeAPI(object):
+class pyawore(object):
 	def __init__(self, key: str) -> LavaAPI:
 		self.token = key
 		self.headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
