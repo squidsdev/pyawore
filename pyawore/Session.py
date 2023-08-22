@@ -4,7 +4,7 @@ from requests import get, post
 import json
 
 class pyawore(object):
-	def __init__(self, key: str) -> LavaAPI:
+	def __init__(self, key: str) -> pyawore:
 		self.token = key
 		self.headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
 		self.url = "https://awore.ru/api/v2"
